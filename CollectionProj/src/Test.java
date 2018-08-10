@@ -1,29 +1,37 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		LinkedList<String> names = new LinkedList<>();
+		ArrayList<String> names = new ArrayList<>();
 		
 		names.add("Hary");//0
 		names.add("Raj");//1
 		names.add("Kumar");//2
 		names.add("Jhon");//3
-
 		names.add("Ria");//4
-		//->
 		names.add("Raj");//5
 		names.add("Rachel");//6
 		names.add("Archana");//7
 		
-		//names.set(2,"Anil");
-		names.add(2,"Anil");
+		Collections.sort(names);
 
-		System.out.println(names);
+		for (String str : names) {
+			System.out.println(str);
+		}
+		
+		//names.set(2,"Anil");
+		//names.add(2,"Anil");
+		
+//		List<String> anotherList = names.subList(2,6);
+//
+//		System.out.println(anotherList);
 		
 		//System.out.println(names.get(2));
 

@@ -8,6 +8,7 @@ public class SavingsAccount extends Object implements IAccountService{
 	int pin;
 	String branch;
 	static float interestRate = 3.25f;
+	String bankName = "XYZ Bank";
 	
 	public SavingsAccount() {
 		// TODO Auto-generated constructor stub
